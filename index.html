@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti Karmkar - Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- REPLACE: Update the title with Jyoti Karmkar -->
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <!-- REPLACE: Your initials or name -->
+                <span class="logo-text">JK</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hello, I'm</p>
+            <!-- REPLACE: Jyoti Karmkar -->
+            <h1 class="hero-name reveal">[Jyoti Karmkar]</h1>
+            <div class="hero-roles reveal">
+                <span class="role-prefix">A </span>
+                <span class="typing-text" id="typing-text"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <!-- REPLACE: Your tagline -->
+            <p class="hero-tagline reveal">School of Programming Student Passionate About Building Real-World Web Applications</p>
+            <div class="hero-buttons reveal">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contact Me</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-scroll reveal">
+                <span>Scroll Down</span>
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-gradient"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">01.</span>
+                <span>About Me</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="/photo/my-photo.jpg" alt="Jyoti Karmkar" onerror="this.style.display='none'">
+                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="floating-badge">
+                        <span class="badge-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                        </span>
+                        <span class="badge-text">Creative Developer</span>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <!-- REPLACE: Your about text -->
+                    <p class="about-intro">Hi, I'm Jyoti Karmkar, a School of Programming student with a strong interest in web development and software development. I enjoy turning ideas into practical, user-friendly applications while continuously learning new technologies and improving my programming skills.</p>
+                    <p class="about-description">I believe that every project is an opportunity to learn something new. Whether I'm building responsive websites, exploring JavaScript and Python, or collaborating on real-world projects, my goal is to create solutions that are both functional and meaningful.</p>
+                    <div class="about-cards">
+                        <div class="about-card glass-card">
+                            <div class="card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                </svg>
+                            </div>
+                            <!-- REPLACE: Your education -->
+<h3>Bachelor of Science (B.Sc.) - First Year</h3>
+<p>Pt. Sundarlal Sharma (Open) University (PSSOU)</p>
+<p>Also pursuing Software Development at School of Programming (SOP) in NavGurukul Dantewada</p>
+                            <span class="card-year">2026 - Present</span>
+                        </div>
+                        <div class="about-card glass-card">
+                            <div class="card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <!-- REPLACE: Your career goal -->
+                            <h3>Career Goal</h3>
+                            <p><h3>Career Goal</h3>
+<p>To become a skilled Software Developer who builds innovative, user-friendly, and impactful applications while continuously learning and growing in the tech industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">02.</span>
+                <span>Skills & Expertise</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="skills-grid">
+                <!-- Skill Card 1 -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-color)">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-color)">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-color)">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-color)">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-color)">
+                            <circle cx="12" cy="12" r="4"/>
+                            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                    <span class="skill-percent">88%</span>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="skill-card glass-card reveal">
+                    <div class="skill-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-color)">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 7v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">03.</span>
+                <span>Featured Projects</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="/projects/project1.jpg" alt="Fruit Ninja Game" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Game Development</span>
+                        <h3 class="project-title">Fruit Ninja</h3>
+                        <p class="project-description">A fast-paced browser game where players slice flying fruits by clicking or dragging across the screen. Built with vanilla JavaScript, it features real-time collision detection, score tracking, and animated fruit-slicing effects using HTML5 Canvas and CSS animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jyotikarmkar25/Fruit-Ninja" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="https://jyotikarmkar25.github.io/Fruit-Ninja/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="/projects/project2.jpg" alt="Rock Paper Scissors Game" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Game Development</span>
+                        <h3 class="project-title">Rock Paper Scissors</h3>
+                        <p class="project-description">An interactive game where the player chooses rock, paper, or scissors and the computer makes its own random choice. The app instantly compares both moves, displays the winner, and keeps a running score. Built entirely with vanilla HTML, CSS, and JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jyotikarmkar25/Rock_Paper_Scissor" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="https://jyotikarmkar25.github.io/Rock_Paper_Scissor/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card glass-card reveal" data-tilt>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <img src="/projects/project3.jpg" alt="Student Feedback System" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-overlay">
+                            <span class="overlay-text">View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Full Stack</span>
+                        <h3 class="project-title">Student Feedback System</h3>
+                        <p class="project-description">A full-stack web application that collects and manages student feedback. The frontend is built with HTML, CSS, and JavaScript, while the backend uses Node.js with Express.js to handle API routes. MongoDB stores the submitted feedback, enabling persistent data retrieval and review.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jyotikarmkar25/Student-Feedback-phase6" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                            <a href="https://jyotikarmkar25.github.io/Student-Feedback-phase6/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">04.</span>
+                <span>Experience & Achievements</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">[YEAR - Present]</span>
+                        <!-- REPLACE: Your experience -->
+                        <h3 class="timeline-title">[POSITION TITLE]</h3>
+                        <h4 class="timeline-company">[COMPANY/ORGANIZATION]</h4>
+                        <p class="timeline-description">[Description of your role, responsibilities, and key contributions. Highlight specific achievements and skills developed.]</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">[YEAR - YEAR]</span>
+                        <h3 class="timeline-title">[POSITION TITLE]</h3>
+                        <h4 class="timeline-company">[COMPANY/ORGANIZATION]</h4>
+                        <p class="timeline-description">[Description of your role, responsibilities, and key contributions. Highlight specific achievements and skills developed.]</p>
+                    </div>
+                </div>
+                <!-- Achievement Cards -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker achievement-marker"></div>
+                    <div class="timeline-content glass-card achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                        </div>
+                        <!-- REPLACE: Your achievement -->
+                        <h3 class="timeline-title">[ACHIEVEMENT TITLE]</h3>
+                        <p class="timeline-description">[Description of the achievement, hackathon, competition, or certification.]</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker achievement-marker"></div>
+                    <div class="timeline-content glass-card achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                        </div>
+                        <h3 class="timeline-title">[ACHIEVEMENT TITLE]</h3>
+                        <p class="timeline-description">[Description of the achievement, hackathon, competition, or certification.]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">05.</span>
+                <span>Get In Touch</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <p class="contact-intro">I'm always excited to connect with people who are passionate about technology and innovation. Whether you have a project idea, an internship opportunity, or simply want to discuss web development, I'd love to hear from you. Let's connect and create something meaningful together!</p>
+                    <div class="contact-details">
+                        <a href="mailto:jyotikarmkar25@navgurukul.org" class="contact-item glass-card">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <!-- REPLACE: Your email -->
+                            <span>jyotikarmkar25@navgurukul.org</span>
+                        </a>
+                        <!-- REPLACE: Your LinkedIn -->
+                        <a href="https://www.linkedin.com/in/jyoti-karmkar-2486b3375/" class="contact-item glass-card" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <!-- REPLACE: Your GitHub -->
+                        <a href="https://github.com/jyotikarmkar25" class="contact-item glass-card" target="_blank" rel="noopener noreferrer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card reveal" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Jyoti Karmkar" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <!-- REPLACE: Your social links -->
+                <a href="https://github.com/jyotikarmkar25" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jyoti-karmkar-2486b3375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="mailto:jyotikarmkar25@navgurukul.org" aria-label="Email jyotikarmkar25@navgurukul.org">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+            </div>
+            <!-- REPLACE: Jyoti Karmkar -->
+            <p class="footer-text">Designed & Built by [Jyoti Karmkar]</p>
+            <p class="footer-copyright">&copy; <span id="year"></span> All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
